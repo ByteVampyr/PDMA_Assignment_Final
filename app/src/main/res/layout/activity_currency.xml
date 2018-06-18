@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/polygonbackgd"
+    tools:context=".currency">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="137dp"
+        android:fontFamily="casual"
+        android:text="Currency Converter"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="286dp"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/crypteus" />
+
+    <EditText
+        android:id="@+id/editText_currency"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner_from"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-241dp"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:text="Amount"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="290dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="253dp"
+        android:background="@android:color/white"
+        android:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="261dp"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/button_convert"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="201dp"
+        android:fontFamily="casual"
+        android:text="Convert!" />
+
+    <TextView
+        android:id="@+id/textView_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:fontFamily="casual"
+        android:text="EUR X,xxx.xx"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:fontFamily="casual"
+        android:text="USD X,xxx.xx"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>
